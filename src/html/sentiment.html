@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <style>
+      div { width: 200px; padding-bottom: 20px; }
+      textarea { width: 200px; height: 50px; }
+      button { width: 100px; height: 25px; display: block; }
+    </style>
+
+    <script>
+
+     var score = function() {
+      var review = document.getElementById("review").value;
+
+      var xhttp = new XMLHttpRequest();
+      // xhttp.onreadystatechange = function() {
+      //   if (this.readyState == 4 && this.status == 200) {
+      //        document.getElementById("output").innerHTML += "<div>"+ xhttp.responseText + "</div>";
+      //
+      //     }
+      // };
+
+
+       xhttp.open("GET", "http://3.236.192.70:5000/predict?input="+review, true);
+
+      // Track the state changes of the request
+      xhttp.onreadystatechange = function(){
+        // Ready state 4 means the request is done
+        if(xhttp.readyState === 4){
+           //200 is a successful return
+          if(xhttp.status === 200){
+            alert(xhttp.responseText); // 'This is the returned text.'
+              document.getElementById("output").innerHTML += "<div>"+ xhttp.responseText + "</div>";
+          }else{
+            alert('Error: '+xhttp.status + '  '+ xhttp.readyState); // An error occurred during the request
+          }
+        }
+      }
+      xhttp.send();
+    }
+
+    </script>
+  </head>
+  <body>
+    <div>Enter your review:</div>
+    <form onsubmit="return false">
+      <textarea id="review"></textarea>
+      <button onclick="score();">Score it!</button>
+    </form>
+  <div id="output"></div>
+  </body>
+</html>
