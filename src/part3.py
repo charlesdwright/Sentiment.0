@@ -5,10 +5,10 @@ from string import punctuation
 import pickle
 import sys
 
-download('punkt')
-download('stopwords')
+download("punkt")
+download("stopwords")
 
-stopwords_eng = stopwords.words('english')
+stopwords_eng = stopwords.words("english")
 
 
 def extract_features(words):
@@ -22,8 +22,8 @@ def bag_of_words(words):
     return bag
 
 
-if 'google.colab' not in sys.modules:
-    model_file = open('resources/sa_classifier.pickle', 'rb')
+if "google.colab" not in sys.modules:
+    model_file = open("resources/sa_classifier.pickle", "rb")
     model = pickle.load(model_file)
     model_file.close()
 

@@ -14,12 +14,12 @@ retval = retval + '<br>' + '<br>'
 
 @app.route('/')
 def hello_whale():
-    return retval + 'Whale, Hello there!'
+    return retval + "Whale, Hello there!"
 
 
 @app.route('/blah')
 def blah_yadda():
-    return retval + 'Blah blah yadda yadda'
+    return retval + "Blah blah yadda yadda"
 
 
 @app.route('/predict', methods=['GET', 'POST'])
@@ -30,7 +30,7 @@ def predict():
     else:
         theinput = request.get_json(force=True)['input']
     if not theinput:
-        return 'No input value found'
+        return "No input value found"
     return retval + get_sentiment(theinput)
 
 
