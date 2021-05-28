@@ -1,11 +1,12 @@
+# coding=utf-8
 import os
 
 from part3 import get_sentiment
 from flask import Flask
 from flask import request
-import datetime
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def hello_whale():
