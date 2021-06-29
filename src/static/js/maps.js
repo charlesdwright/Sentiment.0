@@ -261,7 +261,9 @@ function drawMenu(drawMode){
       captionBox.toggle(500);
       drawBox.toggle(500);
       buttonBox.toggle(500);
-      infoBox.toggle(500);
+     if (infoBox.is(":visible")){
+        infoBox.toggle(500);
+     }
     }
 }
 
@@ -358,8 +360,9 @@ for(key in obj){
 
          // Go through this array and get coordinates of their geometry.
          features.forEach(function(feature) {
-           //alert([home, feature.getGeometry().getClosestPoint(home)]);
+
           drawLine([home, feature.getGeometry().getClosestPoint(home)]);
+
          });
       };
 
