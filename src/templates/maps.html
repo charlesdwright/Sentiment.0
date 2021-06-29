@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="../static/css/maps.css"/>
+    <script type="text/javascript" src="../static/js/jquery-3.6.0.min.js"></script>
+
+  <!-- ol6-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+  <!-- ol6-->
+
+  <title>OpenLayers 10 example</title>
+  </head>
+
+  <body>
+
+
+<!--GRID-->
+<form id="drawMenu" style="display:block">
+
+  <div class="grid-container">
+
+    <div id="map-box" class="item1" >
+      <div class="container" style="display:block">
+          <div id="map" class="map"></div>
+          <div id="marker" title="Marker" style="display:none"></div>
+      </div>
+    </div>
+
+    <div id="caption-box" class="item2" style="display:block">
+      <section id="first" class="section" >
+          <div class="container">
+            <p align="center">
+              <li>Click the map.</li><li>Play around.</li><li>Double-Click the map.</li></p>
+          </div>
+      </section>
+    </div>
+
+    <div id= "draw-box" class="item3" style="display:none">
+      <section id="first" class="section">
+
+          <div class="radio-toolbar">
+              <input type="radio" id="radioPoint" name="radioButton" geometry="Point" />
+              <label for="radioPoint"><i class="fa fa-map-marker fa-2x"></i></label>
+
+              <span style="display:inline-block; width: 20px;"></span>
+
+              <input type="radio" id="radioLine" name="radioButton" geometry="LineString" />
+              <label for="radioLine"><i class="fa fa-arrows-h fa-2x"></i></label>
+
+              <span style="display:inline-block; width: 20px;"></span>
+
+              <input type="radio" id="radioPolygon" name="radioButton" geometry="Polygon" />
+              <label for="radioPolygon"><i class="fa fa-pencil fa-2x"></i></label>
+          </div>
+
+
+          <button type="button" class="button-toolbar" id="buttonInfo" name="buttonInfo" value="Info" />
+          <label for="buttonInfo"><i class="fa fa-info"></i></label>
+
+          <span style="display:inline-block; width: 50px;"></span>
+
+          <button type="button" class="button-toolbar" id="buttonRefresh" name="buttonRefresh" value="Refresh" />
+          <label for="buttonRefresh"><i class="fa fa-refresh fa-spin fa-fw"></i></label>
+
+          <span style="display:inline-block; width: 50px;"></span>
+
+          <button type="button" class="button-toolbar" id="buttonHome" name="buttonHome" value="Home" />
+          <label for="buttonHome"><i class="fa fa-home"></i></label>
+
+      </section>
+
+    </div>
+
+
+
+    <div id="info-box" class="item4" style="display:none">
+        <section id="first" class="section">
+            <form >
+              <p align="center" ></p>
+            </form>
+        </section>
+    </div>
+
+  </div>
+</form>
+<!--End GRID-->
+
+<!-- script -->
+<!--
+    <script type="text/javascript" src="../webpage-maps/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../webpage-maps/js/maps.js"></script>
+-->
+<script type="text/javascript" src="../static/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../static/js/maps.js"></script>
+<!-- end script -->
+
+  </body>
+</html>

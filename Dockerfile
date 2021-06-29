@@ -7,7 +7,7 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 RUN /opt/venv/bin/python3 -m pip install --upgrade pip
 
 COPY ./src /app
-COPY requirements_old.txt /app
+COPY requirements.txt /app
 WORKDIR /app
 
 RUN pip3 install -r requirements.txt

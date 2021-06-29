@@ -1,7 +1,7 @@
 # coding=utf-8
 import os
 
-from part3 import get_sentiment
+from sentiment import get_sentiment
 from flask import Flask, render_template
 from flask import request
 
@@ -10,8 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_whale():
-    #return "Whale, Hello there!"
-    return render_template("blah-1.html")
+    return render_template("main.html")
 
 @app.route('/blah')
 def blah_yadda():
@@ -24,16 +23,13 @@ def predict():
     if request.method == 'GET':
         theinput = request.args.get('input')
     else:
-        #theinput = request.get_json(force=True)['input']
-        #theinput = request.args.get('input')
-       # theinput = request.form['input']
-        return render_template('blah-1.html', result=get_sentiment(request.form['input']))
+        return render_template('main.html', result=get_sentiment(request.form['input']))
 
     if not theinput:
         return "No input value found"
     return get_sentiment(theinput)
 
-@app.route('/sentiment-back', methods=['GET', 'POST'])
+@app.route('/sentiment', methods=['GET', 'POST'])
 def sentiment_back():
 
     if request.method == 'GET':
@@ -44,9 +40,6 @@ def sentiment_back():
     if not theinput:
         return "No input value found"
     return get_sentiment(theinput)
-
-
-
 
 
 if __name__ == '__main__':

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../static/css/main.css"/>
+
+<style></style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CHAZ  <span class="w3-hide-small"></span>  ONLINE</span>
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <p class="w3-center"><em>Multitudes.  But I digress. This is just about...</em></p>
+    <p>Programming, aka "Software Development," or, most recently, "Software Engineering," which really means "implementing someone else's software."  Think "indentured servitude."  To whom, you ask?  Big Tech.  <!--And let's don't forget who and what <a href="https://www.iqt.org">In-Q-Tel</a> is.  If I have to explain <em>that</em>...sigh.  Every "coder" who uses a G--gle library ultimately works for them. --> You're not its only slaves; we are, too.</p>
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <!-- <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p> --><br>
+        <img src="../static/mywork/sentiment-0.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="250" height="150">
+      </div>
+
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>I owned a business and so I needed to crunch numbers.  A natural aversion to repetitive tasks drove me to automate them. An aversion to risk meant that I could earn a better risk-weighted return as a programmer than I did as a trader.
+          <br><br>I avoided a career in tech for the same reason I avoided Van Halen records: I was put off by its constituency. Later in life I discovered that Eddie Van Halen [RIP] was a virtuoso, an innovator, an artist.  I also learned that repetitive tasks can be rather meditative.
+          <br><br>Enough about me.</p>
+          <!--It used to be fun and sometimes, a challenge.  The horizon was lined seemingly endless avenues of creativity wide-open to anyone inclined to take them.  A gift for problem solving, an affection for numbers...those were qualification enough begin a journey down one of those avenues of opportunity.  But reality didn't look like the teasers.  Too often, people inclined to this field are not "people" people.  Too often, they are often loners, obsessives, people who would rather spend a weekend playing Dungeons and Dragons;   Me, I would rather be amongst friends. I turned away from tech when I was young because I didn't like the person I could see it wanted to make me. -->
+        </p>
+      </div>
+    </div>
+    <p class="w3-large w3-center w3-padding-16">Ingredients:</p>
+    <p class="w3-wide"><i class="fa fa-lightbulb-o"></i>Imagination</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-hourglass-end"></i>Tenacity</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-bolt"></i>Tech Chops</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    </div>
+  </div>
+<!--
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">14+</span><br>
+      Partners
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">55+</span><br>
+      Projects Done
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">89+</span><br>
+      Happy Clients
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">150+</span><br>
+      Meetings
+    </div>
+  </div>
+-->
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>...In progress.<br>Click on an image to begin the adventure.</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center" id="boxes">
+    <div class="w3-col m3" >
+      <img src="../static/mywork/sentiment-0.jpg" id="box-1" style="width:100%"  class="w3-hover-opacity" alt="Tell us what you really think...and we'll tell you how you really feel." data-modal-name="modal01">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../static/map-animation/map-animation.gif"  id="box-2" style="width:100%" class="w3-hover-opacity"  alt="¿Donde esta?" data-modal-name="modal02">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../static/mywork/whaaa.jpg" id="box-3" style="width:100%"  class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../static/mywork/whaaa.jpg" id="box-4" style="width:100%"  class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+<!--
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+  -->
+
+</div>
+
+
+<!-- THIS!
+//get your modal body by class and change its html
+//document.getElementByClass("modal-body").innerHTML = "<p>some text</p>";
+-->
+
+<!-- Modals for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" data-keyboard="false" data-backdrop="static">
+
+    <span name="closeModal" class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image" data-dismiss="modal"><i class="fa fa-remove" ></i></span>
+
+    <div class="w3-modal-content w3-animate-opacity w3-center w3-transparent w3-padding-64">
+
+        <!-- <img id="img01" class="w3-image"> -->
+        <p id="caption-modal01" class="w3-opacity w3-large"></p>
+
+          <!-- <form  id="modalForm" onsubmit="loadDoc()" data-backdrop="static" target="_blank"> -->
+          <form  id="modalForm" data-backdrop="static" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px"></div>
+
+            <input  class="w3-input w3-border" type="text" placeholder="Emote" required name="input">
+
+            <button id="modalSubmit" class="w3-button w3-black w3-right w3-section" type="submit">
+              <i class="fa fa-paper-plane"></i> Get Sentiment!
+            </button>
+
+            <button id="modalReset" onclick="resetModal()" class="w3-button w3-black w3-left w3-section" type="button">
+                Reset!
+            </button>
+          </form>
+
+    </div>
+
+   <div class="w3-content w3-container w3-padding-64" id="imgResult">
+     <div class="w3-center">
+         <img id = "imgSentiment" style="width:33%"  class="w3-hover-opacity w3-animate-opacity" >
+
+     </div>
+   </div>
+
+</div>
+
+
+<!-- ===== -->
+
+<div id="modal02" class="w3-modal w3-black" data-keyboard="false" data-backdrop="static">
+
+    <span name="closeModal" class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image" data-dismiss="modal"><i class="fa fa-remove" ></i></span>
+
+    <div class="w3-modal-content w3-animate-opacity w3-center w3-transparent w3-padding-48">
+        <!-- <img id="img-02" class="w3-image"> -->
+        <p id="caption-modal02" class="w3-opacity w3-large"></p>
+
+       <div class="w3-content w3-container w3-padding-32 w3-center" id="imgMap">
+          <div class="modal-body" id="modal02-body">
+              <!--maps.html gets injected here! -->
+          </div>
+      </div>
+    </div>
+
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback! Well, maybe not love</em>...</p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%"> -->
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> New York, NY, US<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Tampa, FL, US<br>
+      <!--   <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br> -->
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: @gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!--
+<script type="text/javascript">
+
+  var map = new ol.Map({
+    target: 'map',
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM()
+      })
+    ],
+    view: new ol.View({
+      center: ol.proj.fromLonLat([37.41, 8.82]),
+      zoom: 6
+    })
+  });
+
+
+  function refreshMap(){
+    //alert("refreshing map" );
+  //  map.updateSize();
+    setTimeout(() => map.updateSize(), 1);
+  //  map.on('click', evt => alert(evt.coordinate)); //console.log(evt.coordinate))
+
+
+   map.on('click', function(evt){
+        console.info(evt.pixel);
+        console.info(map.getPixelFromCoordinate(evt.coordinate));
+        console.info(ol.proj.toLonLat(evt.coordinate));
+        var coords = ol.proj.toLonLat(evt.coordinate);
+        var lat = coords[1];
+        var lon = coords[0];
+        var locTxt = "Latitude: " + lat + " Longitude: " + lon;
+        // coords is a div in HTML below the map to display
+        document.getElementById('coords').innerHTML = locTxt;
+
+    });
+
+
+    var geolocation = new ol.Geolocation({
+     tracking: true
+   });
+
+  // geolocation.bindTo('projection', map.getView());
+
+   geolocation.on('change', function(evt) {
+     //save position and set map center
+
+      var pos = geolocation.getPosition();
+      });
+
+     map.getView().setCenter(pos);
+
+     var iconFeature = new ol.Feature({
+       geometry: new ol.geom.Point(pos)
+     });
+     var vectorSource = new ol.source.Vector({
+       features: [iconFeature]
+     });
+     var vectorLayer = new ol.layer.Vector({
+       source: vectorSource
+     });
+     var iconStyle = new ol.style.Style({
+       image: new ol.style.Icon(({
+         anchor: [0.5, 46],
+         anchorXUnits: 'fraction',
+         anchorYUnits: 'pixels',
+         opacity: 0.75,
+         src: 'data/icon.png'
+       }))
+     });
+
+
+/*
+     var layer = new ol.layer.Vector({
+         source: new ol.source.Vector({
+             features: [
+                 new ol.Feature({
+                     geometry: new ol.geom.Point(ol.proj.fromLonLat([4.35247, 50.84673]))
+
+                 })
+             ]
+         })
+     });
+     map.addLayer(layer);
+
+
+
+}
+
+//  map.on('singleclick', function (evt) {
+//    console.log(evt.coordinate);
+</script>
+-->
+
+
+
+    <script type="text/javascript" src="../static/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../static/js/main.js"></script>
+<!-- end script -->
+
+</body>
+</html>
